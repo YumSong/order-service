@@ -27,11 +27,16 @@ spring:
   flyway:
     locations: "classpath:/db/migration"
 
-  #TODO: change sleuth sample probability
+logging:
+  level:
+    org.springframework.web.servlet.DispatcherServlet: DEBUG
 
-  #TODO: add zipkin configs for local
+sleuth:
+  sampler:
+    probability: 1.0
 
-#TODO: change servlet log level to view the logs
+zipkin:
+  base-url: http://zipkin-server:9411/
 
 springfox:
   documentation:
