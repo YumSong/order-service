@@ -27,16 +27,18 @@ spring:
   flyway:
     locations: "classpath:/db/migration"
 
+  sleuth:
+    sampler:
+      probability: 1.0
+
+  zipkin:
+    base-url: http://zipkin.team-p.cloud.school.thoughtworks.cn
+
 logging:
   level:
     org.springframework.web.servlet.DispatcherServlet: DEBUG
 
-sleuth:
-  sampler:
-    probability: 1.0
 
-zipkin:
-  base-url: http://zipkin-server:9411/
 
 springfox:
   documentation:

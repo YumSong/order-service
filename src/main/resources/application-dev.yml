@@ -7,9 +7,10 @@ logging:
   level:
     org.springframework.web.servlet.DispatcherServlet: DEBUG
 
-sleuth:
-  sampler:
-    probability: 1.0
+spring:
+  sleuth:
+    sampler:
+      probability: 1.0
 
-zipkin:
-  base-url: http://zipkin-server:9411/
+  zipkin:
+    base-url: http://zipkin.team-p.cloud.school.thoughtworks.cn
